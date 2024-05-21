@@ -1,19 +1,13 @@
 package com.sena.konstruapp
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SearchView
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.sena.konstruapp.adapter.GridAdapter
-import com.sena.konstruapp.model.GridItem
+import com.sena.konstruapp.Fragmentos.FragmentCarrito
+import com.sena.konstruapp.Fragmentos.FragmentInicio
+import com.sena.konstruapp.Fragmentos.FragmentPerfil
+import com.sena.konstruapp.databinding.ActivityMainBinding
 
+/*@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var searchView: SearchView
@@ -54,16 +48,16 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_home -> {
+                R.id.Item_Inicio -> {
                     // Maneja la selección del elemento "Inicio"
                     true
                 }
-                R.id.nav_favorites -> {
-                    // Maneja la selección del elemento "Favoritos"
+                R.id.Item_Perfil -> {
+                    // Maneja la selección del elemento "Perfil"
                     true
                 }
-                R.id.nav_settings -> {
-                    // Maneja la selección del elemento "Ajustes"
+                R.id.Item_Carrito -> {
+                    // Maneja la selección del elemento "Carrito"
                     true
                 }
                 else -> false
@@ -104,6 +98,11 @@ class MainActivity : AppCompatActivity() {
                 // Acción para el elemento de notificaciones
                 true
             }
+            R.id.toolbar->{
+             // Acción para la barra superior del icono de menu
+                true
+            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -111,5 +110,63 @@ class MainActivity : AppCompatActivity() {
         // Aquí puedes realizar la acción de búsqueda con el texto ingresado
         // Por ejemplo, puedes filtrar una lista o navegar a una actividad de resultados de búsqueda
         // ...
+    }
+}
+*/
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        verFragmentInicio()
+
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.Item_Inicio -> {
+                    // Maneja la selección del elemento "Inicio"
+                    verFragmentInicio()
+                    true
+                }
+
+                R.id.Item_Perfil -> {
+                    // Maneja la selección del elemento "Perfil"
+                    verFragmentPerfil()
+                    true
+                }
+
+                R.id.Item_Carrito -> {
+                    // Maneja la selección del elemento "Carrito"
+                    verFragmentCarrito()
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
+        }
+    }
+    private fun verFragmentInicio() {
+        binding.TituloRl.text = "Inicio"
+        val fragment = FragmentInicio ()
+        val fragmentTransition = supportFragmentManager.beginTransaction()
+        fragmentTransition.replace(binding.FragmentL1.id,fragment,"FragmentInicio").commit()
+
+    }
+    private fun verFragmentPerfil() {
+        binding.TituloRl.text = "Perfil"
+        val fragment = FragmentPerfil ()
+        val fragmentTransition = supportFragmentManager.beginTransaction()
+        fragmentTransition.replace(binding.FragmentL1.id,fragment,"FragmentPerfil").commit()
+
+    }
+    private fun verFragmentCarrito() {
+        binding.TituloRl.text = "Carrito"
+        val fragment = FragmentCarrito ()
+        val fragmentTransition = supportFragmentManager.beginTransaction()
+        fragmentTransition.replace(binding.FragmentL1.id,fragment,"FragmentCarrito").commit()
+
     }
 }
