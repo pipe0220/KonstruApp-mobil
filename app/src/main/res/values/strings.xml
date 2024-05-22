@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">KonstruApp</string>
+    <string name="Item_Inicio">Inicio</string>
+    <string name="Item_Perfil">Perfil</string>
+    <string name="Item_Carrito">Carrito</string>
+
+    <string name="TituloRl">Titulo</string>
+
+    <string name="Ingrear_email">Inngresar con email</string>
+    <string name="Ingrear_google">Inngresar con Google</string>
+    <string name="Ingrear_facebook">Inngresar con Facebook</string>
+    <string name="Ingrear_twitter">Inngresar con Twitter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
