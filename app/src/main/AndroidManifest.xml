@@ -10,11 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KonstruApp"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".OpcionesLogin"
-            android:exported="false" />
+            android:name=".LoginEmail"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

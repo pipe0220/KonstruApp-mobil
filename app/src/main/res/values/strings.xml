@@ -5,11 +5,13 @@
     <string name="Item_Carrito">Carrito</string>
 
     <string name="TituloRl">Titulo</string>
-
-    <string name="Ingrear_email">Inngresar con email</string>
-    <string name="Ingrear_google">Inngresar con Google</string>
-    <string name="Ingrear_facebook">Inngresar con Facebook</string>
-    <string name="Ingrear_twitter">Inngresar con Twitter</string>
+    <string name="TituloApp">KonstruApp</string>
+    <string name="Ingresar_email">Continuar</string>
+    <string name="Ingresar_google">Ingresar con Google</string>
+    <string name="Ingresar_facebook">Ingresar con Facebook</string>
+    <string name="Ingresar_twitter">Ingresar con Twitter</string>
+    <string name="Acceso">Acceso Rápido Con</string>
+    <string name="Politicas">Si continuas estarás confirmando que eres una persona mayorde edad y que gas leído y aceptado nuestris Términos y Condiciones Y Politicas de privacidad.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

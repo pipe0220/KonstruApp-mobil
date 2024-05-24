@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginEmail">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/themeTopAppBar1"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="@string/TituloApp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nombresTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombres" />
+
+        <EditText
+            android:id="@+id/nombreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m_bottom_height"
+            style="@style/BorderText"
+            android:layout_below="@id/nombresTextView"/>
+
+        <TextView
+            android:id="@+id/apellidosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombreEditText"
+            android:text="Apellidos" />
+
+        <EditText
+            android:id="@+id/apellidoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m_bottom_height"
+            style="@style/BorderText"
+            android:layout_below="@id/apellidosTextView"/>
+
+        <TextView
+            android:id="@+id/fechaNacimientoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/apellidoEditText"
+            android:text="Fecha De Nacimiento" />
+
+        <EditText
+            android:id="@+id/fechaNacimientoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m_bottom_height"
+            style="@style/BorderText"
+            android:layout_below="@id/fechaNacimientoTextView"/>
+
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fechaNacimientoEditText"
+            android:text="Asigna Una Contraseña Entre Min 8 Letras, Números" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m_bottom_height"
+            style="@style/BorderText"
+            android:layout_below="@id/passwordTextView"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/confirmPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEditText"
+            android:text="Confirma Tu Contraseña" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m_bottom_height"
+            style="@style/BorderText"
+            android:layout_below="@id/confirmPasswordTextView"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/registrarButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m_bottom_height"
+            android:layout_below="@id/confirmPasswordEditText"
+
+            style="@style/button_relleno"
+            android:text="Registrate" />
+
+        <TextView
+            android:id="@+id/problemasTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registrarButton"
+            android:text="¿Tienes Problemas Para Iniciar Sesión?" />
+
+        <TextView
+            android:id="@+id/terminosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/problemasTextView"
+            android:text="Si Continuas Estarás Confirmando Que Eres Una Persona Mayor De Edad Y Que Has Leído Y Aceptado Nuestros Términos Y Condiciones Y Políticas De Privacidad" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

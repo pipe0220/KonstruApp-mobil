@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androiod="http://schemas.android.com/tools">
+
 
     <item
         android:id="@+id/Item_Inicio"
+        androiod:background="@color/black"
         android:icon="@drawable/ic_inicio"
         android:title="@string/Item_Inicio" />
 
