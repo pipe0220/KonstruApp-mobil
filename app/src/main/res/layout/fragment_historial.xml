@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="@android:color/darker_gray" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <include
+            android:id="@+id/product_item_1"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_2"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_3"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_4"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_5"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_6"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_7"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_8"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_9"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_10"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_11"
+            layout="@layout/product_item" />
+
+        <include
+            android:id="@+id/product_item_12"
+            layout="@layout/product_item" />
+
+    </GridLayout>
+
+</LinearLayout>
