@@ -16,15 +16,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Foto" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_user_placeholder" />
+            android:src="@drawable/ic_user" />
 
     </LinearLayout>
 
@@ -81,6 +77,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/button_relleno"
         android:text="Eliminar Cuenta" />
 
 </LinearLayout>

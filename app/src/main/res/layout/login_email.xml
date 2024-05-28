@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".LoginEmail">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -20,18 +21,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="30dp"
+        android:layout_below="@id/topAppBar"
         android:gravity="center">
 
         <TextView
             android:id="@+id/nombresTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
             android:text="Nombres" />
 
         <EditText
             android:id="@+id/nombreEditText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/m_bottom_height"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="20dp"
             style="@style/BorderText"
             android:layout_below="@id/nombresTextView"/>
 
@@ -39,6 +46,9 @@
             android:id="@+id/apellidosTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
             android:layout_below="@id/nombreEditText"
             android:text="Apellidos" />
 
@@ -46,6 +56,8 @@
             android:id="@+id/apellidoEditText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/m_bottom_height"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="20dp"
             style="@style/BorderText"
             android:layout_below="@id/apellidosTextView"/>
 
@@ -53,6 +65,9 @@
             android:id="@+id/fechaNacimientoTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
             android:layout_below="@id/apellidoEditText"
             android:text="Fecha De Nacimiento" />
 
@@ -60,6 +75,8 @@
             android:id="@+id/fechaNacimientoEditText"
             android:layout_width="match_parent"
             android:layout_height="@dimen/m_bottom_height"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="20dp"
             style="@style/BorderText"
             android:layout_below="@id/fechaNacimientoTextView"/>
 
@@ -67,6 +84,9 @@
             android:id="@+id/passwordTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
             android:layout_below="@id/fechaNacimientoEditText"
             android:text="Asigna Una Contraseña Entre Min 8 Letras, Números" />
 
@@ -75,6 +95,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/m_bottom_height"
             style="@style/BorderText"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="20dp"
             android:layout_below="@id/passwordTextView"
             android:inputType="textPassword" />
 
@@ -82,6 +104,9 @@
             android:id="@+id/confirmPasswordTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
             android:layout_below="@id/passwordEditText"
             android:text="Confirma Tu Contraseña" />
 
@@ -90,6 +115,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/m_bottom_height"
             style="@style/BorderText"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="20dp"
             android:layout_below="@id/confirmPasswordTextView"
             android:inputType="textPassword" />
 
@@ -97,8 +124,9 @@
             android:id="@+id/registrarButton"
             android:layout_width="match_parent"
             android:layout_height="@dimen/m_bottom_height"
+            android:fontFamily="@font/arial"
             android:layout_below="@id/confirmPasswordEditText"
-
+            android:layout_marginTop="20dp"
             style="@style/button_relleno"
             android:text="Registrate" />
 
@@ -106,6 +134,8 @@
             android:id="@+id/problemasTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
             android:layout_below="@id/registrarButton"
             android:text="¿Tienes Problemas Para Iniciar Sesión?" />
 
@@ -113,9 +143,10 @@
             android:id="@+id/terminosTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="10dp"
             android:layout_below="@id/problemasTextView"
             android:text="Si Continuas Estarás Confirmando Que Eres Una Persona Mayor De Edad Y Que Has Leído Y Aceptado Nuestros Términos Y Condiciones Y Políticas De Privacidad" />
-
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </RelativeLayout>

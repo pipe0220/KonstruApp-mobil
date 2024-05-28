@@ -5,12 +5,13 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="Dirección De Entrega"
+        android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="16dp" />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,20 +27,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Carrera 19 #5b-11"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:text="Carrera 19 #5b-11" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Barrio Nueva Granada"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="4dp"
+            android:text="Barrio Nueva Granada" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Popayan,Cauca,Colombia,190004"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="4dp"
+            android:text="Popayan,Cauca,Colombia,190004" />
 
     </LinearLayout>
 
@@ -47,7 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editar"
-        android:layout_gravity="end"
+        style="@style/button_relleno"
+        android:layout_gravity="center"
+
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp" />
 
@@ -56,6 +59,8 @@
         android:layout_height="wrap_content"
         android:text="Añadir Nueva Dirección"
         android:layout_marginTop="16dp"
+        android:gravity="center"
+        style="@style/button_relleno"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp" />
 
