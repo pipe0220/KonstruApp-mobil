@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/order_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de pedido"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo"/>
+
+            <Button
+                android:id="@+id/btn_sin_pagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sin pagar"/>
+
+            <Button
+                android:id="@+id/btn_procesando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="procesando"/>
+
+            <Button
+                android:id="@+id/btn_enviado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enviado"/>
+
+            <Button
+                android:id="@+id/btn_completado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="completado"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/no_orders_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todavía no tienes pedidos en proceso"
+        android:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/order_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
