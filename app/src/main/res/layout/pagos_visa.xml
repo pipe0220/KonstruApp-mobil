@@ -1,6 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="White"
+            android:rotationX="4"
+            android:src="@drawable/ic_arrow_back_white"
+            android:visibility="visible"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mi Cuenta visa"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/notification_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="White"
+            android:visibility="visible"
+            app:srcCompat="@drawable/action_notification_blanca"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/registrarButton"
+        style="@style/button_relleno"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/arial"
+        android:contentDescription="@string/button_description"/>
+
+    <Button
+        android:id="@+id/miBoton1"
+        style="@style/button_relleno"
+        android:layout_width="407dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/button_description"/>
+    <Button
+        android:id="@+id/miBoton2"
+        style="@style/button_relleno"
+        android:layout_width="407dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="320dp"
+        android:contentDescription="@string/button_description"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="360dp"
+        android:text="tu informacion esta segura con nosotros" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Mi Cuenta visa" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
+        android:text="312000000" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="240dp"
+        android:text="Añadir otra cuenta" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="White"
+        app:srcCompat="?android:attr/textCheckMark"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="350dp"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="235dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/visa"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="90dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="520dp"
+        app:srcCompat="@drawable/konstruapp" />
+
+
+
+</RelativeLayout>

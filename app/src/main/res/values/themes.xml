@@ -42,6 +42,9 @@
         <item name="fontFamily">@font/arial</item>
     </style>
 
-
+<style name="botonR" parent="Theme.Material3.DayNight">
+        <item name="android:background">@color/orange</item>
+        <item name="android:textColor">@color/black</item>
+</style>
 
 </resources>
